@@ -48,14 +48,13 @@
   --sans:"JZ Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 *{ box-sizing:border-box; margin:0; padding:0; }
-html{ scroll-behavior:auto; scroll-padding-top:112px; -webkit-text-size-adjust:100%; }
+html{ scroll-behavior:auto; scroll-padding-top:116px; -webkit-text-size-adjust:100%; }
 body{ font-family:var(--sans); color:var(--ink); background:var(--bg); line-height:1.75; font-size:16px; -webkit-font-smoothing:antialiased; word-break:keep-all; overflow-wrap:break-word; }
 img{ max-width:100%; height:auto; display:block; }
 a{ color:inherit; }
 :focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
 [tabindex="-1"]:focus{ outline:none; }
 .nw{ white-space:nowrap; }
-.serif{ font-family:var(--serif); font-variant-numeric:lining-nums; }
 
 /* 버튼 */
 .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 22px; border-radius:var(--r); text-decoration:none; font-weight:600; font-size:.95rem; color:var(--ink); background:transparent; border:1px solid var(--ink); transition:transform .1s, background-color .2s, color .2s; }
@@ -136,7 +135,7 @@ h2{ font-family:var(--serif); font-weight:600; font-size:clamp(1.9rem, 7vw, 2.6r
 
 /* PC: 왼쪽 고정 패널 + 오른쪽 사진 */
 @media (min-width:1080px){
-  html{ scroll-padding-top:24px; }
+  html{ scroll-padding-top:10px; }
   .top, .quick{ display:none; }
   .wrapx{ display:grid; grid-template-columns:minmax(360px, 32%) minmax(0,1fr); }
   .side{ position:sticky; top:0; height:100vh; height:100dvh; overflow-y:auto; background:var(--panel); padding:48px 44px; display:flex; flex-direction:column; }
@@ -199,7 +198,7 @@ h2{ font-family:var(--serif); font-weight:600; font-size:clamp(1.9rem, 7vw, 2.6r
     <figure class="mhero"><img src="jz-hero.webp" alt="큰 창으로 햇빛이 드는 거실과 베이지 소파" width="1440" height="960" fetchpriority="high" /></figure>
     <div class="inner intro">
       <a class="mark" href="#top" aria-label="JZ INTERIOR 처음으로"><img src="jz-mark.svg" alt="" width="46" height="46" /><span><b>JZ INTERIOR</b><small>제이지 인테리어 디자인</small></span></a>
-      <p class="lead">단순함을 넘어,<br />오래 머물수록 가치가 <span class="nw">깊어지는 공간</span></p>
+      <h1 class="lead">단순함을 넘어,<br />오래 머물수록 가치가 <span class="nw">깊어지는 공간</span></h1>
       <div>
         <p class="sub">창원 부산 경남 인테리어 전문업체</p>
         <nav class="nav" aria-label="주요 메뉴">
