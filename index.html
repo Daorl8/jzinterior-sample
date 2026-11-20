@@ -145,10 +145,11 @@ h2{ font-family:var(--serif); font-weight:600; font-size:clamp(1.9rem, 7vw, 2.6r
   .side .mark span{ display:flex; flex-direction:column; line-height:1.2; }
   .side .mark b{ font-family:var(--serif); font-weight:600; font-size:1.5rem; letter-spacing:.16em; }
   .side .mark small{ font-size:.8rem; color:var(--soft); letter-spacing:.04em; margin-top:2px; }
-  .side .lead{ margin-top:auto; padding-top:48px; font-size:1.65rem; }
+  .side .lead{ margin-top:auto; padding-top:48px; font-size:clamp(1.3rem, 1.75vw, 1.65rem); }
   .side .nav{ display:flex; gap:24px; margin-top:32px; padding-top:20px; border-top:1px solid var(--line); }
   .side .nav a{ font-size:.82rem; font-weight:500; letter-spacing:.14em; text-decoration:none; color:var(--soft); }
-  .cta{ margin-top:24px; }
+  .cta{ margin-top:24px; grid-template-columns:minmax(0,1fr); gap:8px; }
+  .cta .btn{ min-height:46px; padding:0 14px; }
   .side .addr{ display:block; margin-top:28px; font-size:.86rem; color:var(--soft); }
   .side .addr p + p{ margin-top:2px; }
   main{ padding:12px 12px 0; }
@@ -194,7 +195,7 @@ h2{ font-family:var(--serif); font-weight:600; font-size:clamp(1.9rem, 7vw, 2.6r
     <figure class="mhero"><img src="jz-hero.webp" alt="큰 창으로 햇빛이 드는 거실과 베이지 소파" width="1440" height="960" fetchpriority="high" /></figure>
     <div class="inner intro">
       <a class="mark" href="#top" aria-label="JZ INTERIOR 처음으로"><img src="jz-mark.svg" alt="" width="46" height="46" /><span><b>JZ INTERIOR</b><small>제이지 인테리어 디자인</small></span></a>
-      <p class="lead">단순함을 넘어, 오래 머물수록 <span class="nw">가치가 깊어지는 공간</span></p>
+      <p class="lead">단순함을 넘어,<br />오래 머물수록 가치가 <span class="nw">깊어지는 공간</span></p>
       <div>
         <p class="sub">창원 부산 경남 인테리어 전문업체</p>
         <nav class="nav" aria-label="주요 메뉴">
@@ -221,34 +222,34 @@ h2{ font-family:var(--serif); font-weight:600; font-size:clamp(1.9rem, 7vw, 2.6r
       <div class="label"><h2 id="pf-h">PORTFOLIO</h2><small>시공 사례</small></div>
       <div class="gal">
         <figure class="f g-hero"><img src="jz-hero.webp" alt="큰 창으로 햇빛이 드는 거실과 베이지 소파" width="1440" height="960" /></figure>
-        <figure class="f reveal"><img src="jz-f1.webp" alt="거실과 원형 식탁, 길게 이어진 주방" width="1200" height="800" loading="lazy" /></figure>
+        <figure class="f reveal"><img src="jz-f1.webp" alt="짙은 우드 아트월과 실링팬이 있는 거실" width="1200" height="800" loading="lazy" /></figure>
         <div class="p">
-          <figure class="reveal"><img src="jz-p1a.webp" alt="창가의 모듈 소파와 짙은 우드 수납장" width="720" height="900" loading="lazy" /></figure>
-          <figure class="reveal"><img src="jz-p1b.webp" alt="흰 수납장이 이어진 복도" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p1a.webp" alt="아치형 우드 프레임과 거울이 있는 공간" width="616" height="770" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p1b.webp" alt="원형 조명 거울과 욕조가 있는 욕실" width="616" height="770" loading="lazy" /></figure>
         </div>
-        <figure class="f reveal"><img src="jz-f2.webp" alt="짙은 우드 아트월과 실링팬이 있는 거실" width="1200" height="800" loading="lazy" /></figure>
+        <figure class="f reveal"><img src="jz-f2.webp" alt="대리석 패턴 아일랜드와 장식장" width="1200" height="800" loading="lazy" /></figure>
         <div class="p">
-          <figure class="reveal"><img src="jz-p2a.webp" alt="세라믹 상판 아일랜드 주방" width="720" height="900" loading="lazy" /></figure>
-          <figure class="reveal"><img src="jz-p2b.webp" alt="아일랜드 개수대와 수전" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p2a.webp" alt="흰 상부장과 베이지 상판 주방" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p2b.webp" alt="연한 블루 그레이 하부장 주방" width="720" height="900" loading="lazy" /></figure>
         </div>
-        <figure class="f reveal"><img src="jz-f3.webp" alt="대리석 패턴 아일랜드와 장식장" width="1200" height="800" loading="lazy" /></figure>
+        <figure class="f reveal"><img src="jz-f3.webp" alt="원형 식탁과 아일랜드 주방" width="1200" height="800" loading="lazy" /></figure>
         <div class="p">
-          <figure class="reveal"><img src="jz-p3a.webp" alt="간접조명이 바닥을 비추는 현관 복도" width="720" height="900" loading="lazy" /></figure>
-          <figure class="reveal"><img src="jz-p3b.webp" alt="포인트 타일 샤워 공간" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p3a.webp" alt="아치형 우드 문틀 너머 욕실" width="618" height="772" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p3b.webp" alt="짙은 타일과 사각 세면대 욕실" width="473" height="591" loading="lazy" /></figure>
         </div>
         <figure class="f reveal"><img src="jz-f4.webp" alt="밝은 거실과 가죽 소파" width="1200" height="800" loading="lazy" /></figure>
         <div class="p">
-          <figure class="reveal"><img src="jz-p4a.webp" alt="흰 상부장과 베이지 상판 주방" width="720" height="900" loading="lazy" /></figure>
-          <figure class="reveal"><img src="jz-p4b.webp" alt="트라버틴 톤 세면대와 욕실" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p4a.webp" alt="창가의 모듈 소파와 짙은 우드 수납장" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p4b.webp" alt="세라믹 상판 아일랜드 주방" width="720" height="900" loading="lazy" /></figure>
         </div>
-        <figure class="f reveal"><img src="jz-f5.webp" alt="원형 식탁과 아일랜드 주방" width="1200" height="800" loading="lazy" /></figure>
+        <figure class="f reveal"><img src="jz-f5.webp" alt="유광 타일 바닥과 큰 창이 있는 거실" width="1200" height="800" loading="lazy" /></figure>
         <div class="p">
-          <figure class="reveal"><img src="jz-p5a.webp" alt="베이지 타일 욕실" width="720" height="900" loading="lazy" /></figure>
-          <figure class="reveal"><img src="jz-p5b.webp" alt="슬라이딩 도어가 있는 복도" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p5a.webp" alt="포인트 타일 샤워 공간" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p5b.webp" alt="베이지 타일 욕실" width="720" height="900" loading="lazy" /></figure>
         </div>
         <figure class="f reveal"><img src="jz-f6.webp" alt="흰 벽과 베이지 소파가 있는 거실" width="1200" height="800" loading="lazy" /></figure>
         <div class="p">
-          <figure class="reveal"><img src="jz-p6a.webp" alt="연한 블루 그레이 하부장 주방" width="720" height="900" loading="lazy" /></figure>
+          <figure class="reveal"><img src="jz-p6a.webp" alt="간접조명이 바닥을 비추는 현관 복도" width="720" height="900" loading="lazy" /></figure>
           <figure class="reveal"><img src="jz-p6b.webp" alt="유리 슬라이딩 도어 너머 복도" width="720" height="900" loading="lazy" /></figure>
         </div>
       </div>
